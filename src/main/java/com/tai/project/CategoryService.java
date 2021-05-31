@@ -35,7 +35,7 @@ public class CategoryService {
                 .save(categoryFactory.updateEntityFromCategoryRequestDto(categoryToUpdate, categoryRequestDto)));
     }
 
-    public void deleteCategory(Long categoryId){
+    public void deleteCategory(Long categoryId) {
         categoryRepository.delete(categoryRepository.findById(categoryId)
                 .orElseThrow(() -> new RuntimeException("Not found such category")));
     }

@@ -6,9 +6,10 @@ import lombok.*;
 @Getter
 @Setter
 @AllArgsConstructor
-@NoArgsConstructor
-public class ProductDtoRequest {
+
+public class ProductResponseDto {
+    private Long id;
     private String name;
     private Double price;
-    private Long categoryId;
+    private CategoryResponseDto category;
 }

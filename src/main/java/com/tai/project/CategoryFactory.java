@@ -17,7 +17,7 @@ public class CategoryFactory {
                 .build();
     }
 
-    public CategoryEntity updateEntityFromCategoryRequestDto(CategoryEntity categoryEntity, CategoryRequestDto categoryRequestDto){
+    public CategoryEntity updateEntityFromCategoryRequestDto(CategoryEntity categoryEntity, CategoryRequestDto categoryRequestDto) {
         categoryEntity.setName(categoryRequestDto.getName());
         return categoryEntity;
     }
