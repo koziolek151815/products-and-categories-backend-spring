@@ -44,5 +44,10 @@ public class CategoryController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @GetMapping("/{id}/products")
+    public ResponseEntity<?> getAllProductsForCategory(@PathVariable Long id) {
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(categoryService.getAllProductsForCategory(id));
+    }
 
 }

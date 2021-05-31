@@ -10,7 +10,9 @@ import java.util.stream.Collectors;
 @Service
 public class CategoryService {
     private final CategoryRepository categoryRepository;
+    private final ProductRepository productRepository;
     private final CategoryFactory categoryFactory;
+    private final ProductFactory productFactory;
 
     public List<CategoryResponseDto> getAllCategories(){
         return categoryRepository.findAll()
@@ -38,5 +40,12 @@ public class CategoryService {
     public void deleteCategory(Long categoryId) {
         categoryRepository.delete(categoryRepository.findById(categoryId)
                 .orElseThrow(() -> new RuntimeException("Not found such category")));
+    }
+    public List<ProductResponseDto> getAllProductsForCategory(Long categoryId){
+        CategoryEntity categoryEntity = categoryRepository.findById(categoryId).orElseThrow(() -> new RuntimeException("Not found such category"));
+        return productRepository.findAllByCategory(categoryEntity)
+                .stream()
+                .map(productFactory::entityToProductResponseDto)
+                .collect(Collectors.toList());
     }
 }
