@@ -1,5 +1,6 @@
-package com.tai.project;
+package com.tai.project.products.dto;
 
+import com.tai.project.categories.dto.CategoryResponseDto;
 import lombok.*;
 
 @Builder

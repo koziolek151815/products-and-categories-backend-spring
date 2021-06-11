@@ -1,4 +1,4 @@
-package com.tai.project;
+package com.tai.project.products.dto;
 
 import lombok.*;
 

@@ -1,5 +1,7 @@
-package com.tai.project;
+package com.tai.project.categories;
 
+import com.tai.project.categories.dto.CategoryRequestDto;
+import com.tai.project.categories.dto.CategoryResponseDto;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

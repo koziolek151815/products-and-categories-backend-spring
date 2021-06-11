@@ -1,4 +1,4 @@
-package com.tai.project;
+package com.tai.project.categories.dto;
 
 import lombok.*;
 
@@ -7,7 +7,6 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class CategoryResponseDto {
-    private Long id;
+public class CategoryRequestDto {
     private String name;
 }

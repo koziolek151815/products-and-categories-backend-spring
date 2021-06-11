@@ -1,5 +1,6 @@
-package com.tai.project;
+package com.tai.project.categories;
 
+import com.tai.project.products.ProductEntity;
 import lombok.*;
 
 import javax.persistence.*;

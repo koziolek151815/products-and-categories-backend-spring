@@ -1,11 +1,10 @@
-package com.tai.project;
+package com.tai.project.categories;
 
+import com.tai.project.categories.dto.CategoryRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*")

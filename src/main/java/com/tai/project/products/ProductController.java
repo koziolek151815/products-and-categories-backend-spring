@@ -1,5 +1,6 @@
-package com.tai.project;
+package com.tai.project.products;
 
+import com.tai.project.products.dto.ProductRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

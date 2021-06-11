@@ -1,5 +1,9 @@
-package com.tai.project;
+package com.tai.project.products;
 
+import com.tai.project.categories.CategoryEntity;
+import com.tai.project.categories.CategoryRepository;
+import com.tai.project.products.dto.ProductRequestDto;
+import com.tai.project.products.dto.ProductResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

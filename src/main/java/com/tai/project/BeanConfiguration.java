@@ -1,5 +1,7 @@
 package com.tai.project;
 
+import com.tai.project.categories.CategoryFactory;
+import com.tai.project.products.ProductFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
